@@ -2,277 +2,39 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Dream2Build1 | Plateforme solidaire & digitale</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f4faff;
-      color: #222;
-    }
-    header {
-      background-color: #5ec6f2;
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      background-color: #3daee3;
-      padding: 10px;
-      flex-wrap: wrap;
-      gap: 15px;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      padding: 8px 15px;
-      border-radius: 5px;
-      background-color: #35a1d4;
-    }
-    .section {
-      padding: 40px 20px;
-      text-align: center;
-    }
-    .section h2 {
-      color: #2a7da5;
-    }
-    .cta-buttons {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 15px;
-      margin-top: 20px;
-    }
-    .cta-buttons a {
-      padding: 12px 20px;
-      background-color: #00a8e8;
-      color: white;
-      text-decoration: none;
-      border-radius: 25px;
-      font-weight: bold;
-    }
-    .formulaire {
-      max-width: 500px;
-      margin: auto;
-      background-color: #ffffff;
-      border: 1px solid #cceeff;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-      text-align: left;
-    }
-    .formulaire input, .formulaire button {
-      width: 100%;
-      padding: 10px;
-      margin-top: 10px;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-      box-sizing: border-box;
-      font-size: 1em;
-    }
-    .formulaire button {
-      background-color: #00a8e8;
-      color: white;
-      font-weight: bold;
-      border: none;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-    .formulaire button:hover {
-      background-color: #008fcc;
-    }
-    .recu {
-      display: none;
-      background: #ffffff;
-      border: 1px solid #cceeff;
-      margin: 30px auto;
-      padding: 20px;
-      border-radius: 10px;
-      max-width: 500px;
-      text-align: left;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      font-size: 1em;
-    }
-    .recu h3 {
-      margin-top: 0;
-      color: #2a7da5;
-    }
-    .print-button {
-      display: block;
-      margin: 10px auto 0 auto;
-      background-color: #0090c5;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 8px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-    .print-button:hover {
-      background-color: #0077a8;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #3daee3;
-      color: white;
-    }
-    @media screen and (max-width: 600px) {
-      header h1 {
-        font-size: 1.8em;
-      }
-      nav {
-        flex-direction: column;
-        align-items: center;
-      }
-      .section {
-        padding: 20px 10px;
-      }
-      .formulaire, .recu {
-        width: 90%;
-        padding: 20px;
-      }
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Connexion DREAM2BUILD1</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
 </head>
-<body>
-
-<header>
-  <h1>Dream2Build1</h1>
-  <p>Une boutique solidaire et plateforme digitale au service de votre avenir</p>
-</header>
-
-<nav>
-  <a href="#produits">Produits</a>
-  <a href="#formations">Formations</a>
-  <a href="#communaute">Communauté</a>
-  <a href="#inscription">Inscription</a>
-</nav>
-
-<section class="section" id="produits">
-  <h2>🛒 Nos Produits Numériques</h2>
-  <p>Découvrez nos packs internet, guides, outils et modèles téléchargeables pour vous simplifier la vie.</p>
-  <div class="cta-buttons">
-    <a href="#inscription">Commander maintenant</a>
-  </div>
-</section>
-
-<section class="section" id="formations">
-  <h2>🎓 Formations Pratiques</h2>
-  <p>Apprenez à utiliser les outils numériques, à lancer un micro-business, et bien plus encore !</p>
-  <div class="cta-buttons">
-    <a href="#inscription">Découvrir nos services</a>
-  </div>
-</section>
-
-<section class="section" id="communaute">
-  <h2>🌍 Une Communauté Solidaire</h2>
-  <p>Rejoignez un réseau d'entraide et de croissance digitale en Haïti et ailleurs.</p>
-  <div class="cta-buttons">
-    <a href="#inscription">Rejoindre la communauté</a>
-  </div>
-</section>
-
-<section class="section" id="inscription">
-  <h2>📝 Formulaire d’inscription</h2>
-  <form class="formulaire" id="d2b1Form">
-    <input type="text" name="nom" placeholder="Nom" required />
-    <input type="text" name="prenom" placeholder="Prénom" required />
-    <input type="text" name="cin" placeholder="CIN ou NIF" required />
-    <input type="email" name="email" placeholder="Email" required />
-    <input type="text" name="whatsapp" placeholder="Numéro WhatsApp" required />
-    <button type="submit">Envoyer</button>
+<body class="bg-gray-100 p-6">
+  <h1 class="text-2xl font-bold mb-4">Connexion Admin</h1>
+  <form class="space-y-4 max-w-md">
+    <input type="email" name="email" placeholder="Email" required class="w-full p-2 border rounded" />
+    <input type="password" name="password" placeholder="Mot de passe" required class="w-full p-2 border rounded" />
+    <button type="submit" class="bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800">Se connecter</button>
   </form>
-</section>
 
-<div class="recu" id="recu">
-  <h3>📄 Reçu de soumission</h3>
-  <p><strong>Numéro de reçu :</strong> <span id="r_id"></span></p>
-  <p><strong>Nom :</strong> <span id="r_nom"></span></p>
-  <p><strong>Prénom :</strong> <span id="r_prenom"></span></p>
-  <p><strong>CIN/NIF :</strong> <span id="r_cin"></span></p>
-  <p><strong>Email :</strong> <span id="r_email"></span></p>
-  <p><strong>WhatsApp :</strong> <span id="r_whatsapp"></span></p>
-  <button class="print-button" onclick="window.print()">🖨️ Imprimer le reçu</button>
-</div>
+  <script>
+    document.querySelector("form").addEventListener("submit", function(event) {
+      event.preventDefault();
+      const email = this.email.value;
+      const password = this.password.value;
 
-<footer>
-  &copy; 2025 Dream2Build1 – Tous droits réservés.
-</footer>
-
-<script>
-  // Génère un ID unique de reçu au format D2B1-YYYYMMDD-XXX
-  function generateReceiptID() {
-    const today = new Date();
-    const yyyy = today.getFullYear();
-    const mm = String(today.getMonth() + 1).padStart(2, '0');
-    const dd = String(today.getDate()).padStart(2, '0');
-    const datePart = `${yyyy}${mm}${dd}`;
-
-    // Stocke compteur dans localStorage pour chaque jour
-    const countKey = `receiptCount-${datePart}`;
-    let count = localStorage.getItem(countKey);
-    count = count ? parseInt(count) + 1 : 1;
-    localStorage.setItem(countKey, count);
-
-    const paddedCount = String(count).padStart(3, '0');
-    return `D2B1-${datePart}-${paddedCount}`;
-  }
-
-  // Envoi du formulaire vers Google Apps Script
-  async function sendForm(event) {
-    event.preventDefault();
-    const form = event.target;
-    const receiptID = generateReceiptID();
-    const data = {
-      id: receiptID,
-      nom: form.nom.value,
-      prenom: form.prenom.value,
-      cin: form.cin.value,
-      email: form.email.value,
-      whatsapp: form.whatsapp.value
-    };
-
-    try {
-      const response = await fetch("https://script.google.com/macros/s/AKfycbzygsYr12TA5y9V4wEfoh7HcTyUUnp8AX8cA5Xm00PVRXnGwF225mNIwHcS8n2c820r5A/exec", {
+      fetch("https://script.google.com/macros/s/AKfycbzFHk8Ew8MrPtxHI0_RglEvBUDk24QPrCD2ZGwxJ7k592RnKQf_U9OsG_8rcWNT6j88/exec?sheet=Login", {
         method: "POST",
-        body: JSON.stringify(data),
-        headers: { "Content-Type": "application/json" }
-      });
-
-      if (response.ok) {
-        alert("Inscription envoyée avec succès !");
-        form.reset();
-        afficherRecu(data);
-      } else {
-        alert("Erreur lors de l'envoi. Veuillez réessayer.");
-      }
-    } catch (error) {
-      console.error(error);
-      alert("Erreur réseau. Vérifiez votre connexion.");
-    }
-  }
-
-  // Affiche le reçu sur la page
-  function afficherRecu(data) {
-    document.getElementById("r_id").innerText = data.id;
-    document.getElementById("r_nom").innerText = data.nom;
-    document.getElementById("r_prenom").innerText = data.prenom;
-    document.getElementById("r_cin").innerText = data.cin;
-    document.getElementById("r_email").innerText = data.email;
-    document.getElementById("r_whatsapp").innerText = data.whatsapp;
-    document.getElementById("recu").style.display = "block";
-    window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
-  }
-
-  // Ajout du listener sur le formulaire
-  document.getElementById('d2b1Form').addEventListener('submit', sendForm);
-</script>
-
+        body: new URLSearchParams({ email, password }),
+      })
+      .then(res => res.text())
+      .then(result => {
+        if (result === "SUCCESS") {
+          alert("Connexion réussie !");
+          window.location.href = "admin.html";
+        } else {
+          alert("Identifiants invalides");
+        }
+      })
+      .catch(() => alert("Erreur réseau. Vérifiez votre connexion."));
+    });
+  </script>
 </body>
 </html>
