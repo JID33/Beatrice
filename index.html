@@ -3,74 +3,185 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Idreams2build1 - Données & Micro-Business</title>
-  <meta name="description" content="Plateforme solidaire de services numériques et d'entrepreneuriat collaboratif. Rejoignez-nous pour la saisie de données ou créer un micro-business."/>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <title>Dream2Build1 | Plateforme solidaire & digitale</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4faff;
+      color: #222;
+    }
+
+    header {
+      background-color: #5ec6f2;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #3daee3;
+      padding: 10px;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 15px;
+      border-radius: 5px;
+      background-color: #35a1d4;
+    }
+
+    .section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .section h2 {
+      color: #2a7da5;
+    }
+
+    .cta-buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .cta-buttons a {
+      padding: 12px 20px;
+      background-color: #00a8e8;
+      color: white;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+    }
+
+    .formulaire {
+      max-width: 500px;
+      margin: auto;
+      background-color: #ffffff;
+      border: 1px solid #cceeff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .formulaire input, .formulaire button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .formulaire button {
+      background-color: #00a8e8;
+      color: white;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #3daee3;
+      color: white;
+    }
+  </style>
 </head>
-<body class="bg-gray-100 text-gray-800">
-  <header class="bg-green-700 text-white py-6">
-    <div class="container mx-auto px-4 flex flex-col sm:flex-row justify-between items-center">
-      <div class="flex items-center space-x-4">
-        <img src="https://drive.google.com/uc?export=view&id=17Jochcyvz6RJeOyYDunbjzfFaH8Ds6SF" alt="Logo" class="w-12 h-12 object-contain rounded"/>
-        <div>
-          <h1 class="text-3xl font-bold">Dream 2 Build 1</h1>
-          <p class="text-sm">L’union fait le capital — Données & Coopération Entrepreneuriale</p>
-        </div>
-      </div>
-      <nav class="mt-4 sm:mt-0 space-x-4">
-        <a href="#donnees" class="text-white hover:underline">Saisie & Données</a>
-        <a href="#business" class="text-white hover:underline">Micro-Business</a>
-        <a href="#rejoindre" class="text-white hover:underline">Rejoindre</a>
-      </nav>
-    </div>
+<body>
+
+  <header>
+    <h1>Dream2Build1</h1>
+    <p>Une boutique solidaire et plateforme digitale au service de votre avenir</p>
   </header>
-  <section class="py-10 px-4">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-2xl font-semibold mb-4">Bienvenue sur notre plateforme</h2>
-      <p class="text-gray-600 text-sm mb-2">Notre mission : faciliter l’accès à des services professionnels de traitement de données tout en construisant une solidarité économique autour des micro-entreprises.</p>
-      <p class="mb-4">Nous sommes un groupe de professionnels spécialisés dans la saisie, le traitement et la gestion de données numériques. Notre objectif est d'offrir des services fiables et abordables aux entreprises et aux particuliers.</p>
-      <p>En parallèle, nous développons un modèle de financement solidaire pour soutenir la création de micro-entreprises à rotation rapide.</p>
+
+  <nav>
+    <a href="#produits">Produits</a>
+    <a href="#formations">Formations</a>
+    <a href="#communaute">Communauté</a>
+    <a href="#inscription">Inscription</a>
+  </nav>
+
+  <section class="section" id="produits">
+    <h2>🛒 Nos Produits Numériques</h2>
+    <p>Découvrez nos packs internet, guides, outils et modèles téléchargeables pour vous simplifier la vie.</p>
+    <div class="cta-buttons">
+      <a href="#inscription">Commander maintenant</a>
     </div>
   </section>
-  <section id="donnees" class="bg-white py-10 px-4">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-2xl font-semibold mb-4">Services de Saisie & Traitement de Données</h2>
-      <p class="text-gray-600 text-sm mb-2">Voici un aperçu des prestations que nous proposons à distance ou en partenariat.</p>
-      <ul class="list-disc list-inside space-y-2">
-        <li>Saisie manuelle ou automatisée</li>
-        <li>Nettoyage et structuration de données</li>
-        <li>Conversion de formats (PDF, Word, Excel)</li>
-        <li>Transcription audio/vidéo</li>
-        <li>Archivage numérique et indexation</li>
-        <li>Support administratif délocalisé</li>
-      </ul>
+
+  <section class="section" id="formations">
+    <h2>🎓 Formations Pratiques</h2>
+    <p>Apprenez à utiliser les outils numériques, à lancer un micro-business, et bien plus encore !</p>
+    <div class="cta-buttons">
+      <a href="#inscription">Découvrir nos services</a>
     </div>
   </section>
-  <section id="business" class="bg-gray-50 py-10 px-4">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-2xl font-semibold mb-4">Système solidaire de Micro-Business</h2>
-      <p class="mb-4">Nous avons mis en place un système coopératif où chaque membre peut bénéficier d’un financement rotatif pour lancer une petite activité génératrice de revenus.</p>
-      <ul class="list-disc list-inside space-y-2">
-        <li>Vente de produits alimentaires (boutique, marché)</li>
-        <li>Commerce en ligne (vêtements, recharges, etc.)</li>
-        <li>Services : barber shop, coiffure, réparation mobile, etc.</li>
-      </ul>
-      <p class="mt-4">Le principe est simple : un cycle de financement solidaire avec rotation mensuelle et suivi par un tableau partagé. Chacun bénéficie à tour de rôle.</p>
+
+  <section class="section" id="communaute">
+    <h2>🌍 Une Communauté Solidaire</h2>
+    <p>Rejoignez un réseau d'entraide et de croissance digitale en Haïti et ailleurs.</p>
+    <div class="cta-buttons">
+      <a href="#inscription">Rejoindre la communauté</a>
     </div>
   </section>
-  <section id="rejoindre" class="bg-white py-10 px-4">
-    <div class="max-w-3xl mx-auto">
-      <h2 class="text-2xl font-semibold mb-4">Rejoignez la coopérative</h2>
-      <form class="space-y-4" action="https://formsubmit.co/ejeambas@gmail.com" method="POST">
-        <input type="text" name="name" placeholder="Votre nom complet" required class="w-full px-4 py-2 border rounded">
-        <input type="email" name="email" placeholder="Adresse e-mail" required class="w-full px-4 py-2 border rounded">
-        <textarea name="message" placeholder="Votre motivation ou expérience" required class="w-full px-4 py-2 border rounded"></textarea>
-        <button type="submit" class="bg-green-700 text-white px-6 py-2 rounded hover:bg-green-800">Envoyer</button>
-      </form>
-    </div>
+
+  <section class="section" id="inscription">
+    <h2>📝 Formulaire d’inscription</h2>
+    <form class="formulaire" onsubmit="sendForm(event)">
+      <input type="text" name="nom" placeholder="Nom" required />
+      <input type="text" name="prenom" placeholder="Prénom" required />
+      <input type="text" name="cin" placeholder="CIN ou NIF" required />
+      <input type="email" name="email" placeholder="Email" required />
+      <input type="text" name="whatsapp" placeholder="Numéro WhatsApp" required />
+      <button type="submit">Envoyer</button>
+    </form>
   </section>
-  <footer class="bg-green-800 text-white text-center py-6 mt-10">
-    <p>&copy; 2025 Idreams2build1 - L’union fait le capital. Tous droits réservés.</p>
+
+  <footer>
+    &copy; 2025 Dream2Build1 – Tous droits réservés.
   </footer>
+
+  <script>
+    function sendForm(event) {
+      event.preventDefault();
+      const form = event.target.closest("form");
+      const data = {
+        nom: form.nom.value,
+        prenom: form.prenom.value,
+        cin: form.cin.value,
+        email: form.email.value,
+        whatsapp: form.whatsapp.value
+      };
+
+      fetch("https://script.google.com/macros/s/AKfycbzygsYr12TA5y9V4wEfoh7HcTyUUnp8AX8cA5Xm00PVRXnGwF225mNIwHcS8n2c820r5A/exec", {
+        method: "POST",
+        body: JSON.stringify(data),
+        headers: {
+          "Content-Type": "application/json"
+        }
+      }).then(res => {
+        alert("Inscription envoyée avec succès !");
+        form.reset();
+      }).catch(err => {
+        alert("Erreur lors de l’envoi. Réessayez.");
+      });
+    }
+  </script>
+
 </body>
 </html>
